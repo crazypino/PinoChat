@@ -6,7 +6,7 @@ function submitlogin() {
     var username=$("#username").val();
     var password=$("#password").val();
     if (username.length===0) {
-        layer.tips("请输入账号", '#username', {
+        layer.tips("Enter username", '#username', {
             tips: [1, "#0FA6D8"],
             tipsMore: !1,
             time: 2000
@@ -15,7 +15,7 @@ function submitlogin() {
         return false;
     }
     if (password.length===0) {
-        layer.tips("请输入密码",'#password',{
+        layer.tips("Enter password",'#password',{
             tips: [1, "#0FA6D8"],
             tipsMore: !1,
             time: 2000
@@ -34,7 +34,7 @@ function submitlogin() {
         type: "post",
         dataType: "json", //回调
         beforeSend: function () {
-            layer.msg('登陆中', {
+            layer.msg('LOADING', {
                 icon: 16
                 ,shade: 0.01
             });

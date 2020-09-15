@@ -56,7 +56,7 @@
                                             @click="selectStyle (item,item.username)"
                                             :class="{'active':item.active,'unactive':!item.active,'leftnickename':true}">
                                             <p>
-                                                <img :src="item.uimg" style="border-radius:50%;height:60px;">
+                                                <img :src="item.uimg" style="border-radius:10%;height:50px;margin-top:10px;margin-bottom:10px;margin-left: 10px;">
                                                 <span :class="{'layui-badge-dot':item.newnote,'':!item.newnote,'newnoteid':true}"></span>
                                                 {{item.nickname}}
                                             </p>
@@ -128,7 +128,7 @@
                             <div style="display:none;" id="info">
                                 <div class="single-member effect-1">
                                     <div class="member-info">
-                                        <img :src="userinfo.uimg" style="width:100px" alt="Member" class="layui-circle">
+                                        <img :src="userinfo.uimg" style="border-radius:10%;width:100px;margin-top:15px" alt="Member">
                                         <h3>{{userinfo.nickname}}</h3>
                                         <button type="button" class="layui-btn layui-btn-sm layui-btn-normal" @click="adduser(userinfo.username)">ADD FRIEND</button>
                                     </div>

@@ -10,17 +10,8 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+		
 	}
 	
-	@Bean
-	public WebMvcConfigurerAdapter WebMvcConfigurerAdapter() {
-		WebMvcConfigurerAdapter adapter = new WebMvcConfigurerAdapter() {
-			@Override
-			public void addResourceHandlers(ResourceHandlerRegistry registry) {
-				registry.addResourceHandler("/pic/**").addResourceLocations("classpath:/pics/");
-				super.addResourceHandlers(registry);
-			}
-		};
-		return adapter;
-	}
+	
 }

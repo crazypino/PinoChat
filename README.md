@@ -1,4 +1,3 @@
 # PinoChat
 WebChat
-个人网站pinowakeup.com有demo视频，不过刚刚换nameserver，可能dns解析还有问题。
-也可以通过ip:165.227.57.226访问。
+个人网站pinowakeup.com有demo视频，不过好像国外访问没问题，国内访问有点问题。可能和server是digitalocean有关。
